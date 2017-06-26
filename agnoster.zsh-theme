@@ -105,7 +105,10 @@ prompt_git() {
 
 # Dir: current working directory
 prompt_dir() {
-  prompt_segment blue $PRIMARY_FG ' %~ '
+  	#prompt_segment blue $PRIMARY_FG ' %~ '
+  	#julianB
+  	#this change displays only the current directory instead of full path
+  	prompt_segment blue black '%c'
 }
 
 # Status:
